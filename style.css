@@ -1,0 +1,135 @@
+/* Selecting All Elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;   /* got Roboto family from googlefonts */
+}
+
+body {
+    font-size: 15px;
+}
+
+label {
+    text-align: right;
+    width: 200px;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.prompts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 600px;
+    display: flex;
+    margin-top: 15px;
+
+}
+
+.form-container {
+    width: 600px;
+    height: 550px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, rgba(219, 221, 255, 0.3), rgba(219, 221, 221, 0.6));
+}
+
+input,
+select {
+    margin-left: 10px;
+    height: 20px;
+}
+
+/* not resizable to X and Y axis but scrollable to Y axis after fulfilling the visible text area */
+textarea {
+    margin-left: 10px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.radio-org {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: -15px;
+}
+.radio-org-sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
+.btn {
+    vertical-align: middle;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.btn:hover {
+    color: #fff;
+    background: rgb(118, 180, 71);
+}
+
+.separateLine {
+    margin-top: 10px;
+    outline: 0;
+    border: 0;
+    height: 2px;
+    background: #000;
+    opacity: 0.5;
+}
+
+#fnamePrompt,
+#lnamePrompt,
+#agePrompt {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.improve{
+    position: relative;
+}
+#feedback{
+    position: absolute;
+    width: 150px;
+    
+    top: 20%;
+    left: 7%;
+  
+
+}
+
+
+/* For Responsive Design */
+@media (max-width:730px) {
+    body {
+        transform: scale(0.8);
+        transform-origin: top;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        transform: scale(0.6);
+        transform-origin: top;
+        
+    }
+}
+

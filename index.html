@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="#">
+            <div class="fname">
+                <label for="first name">First Name: </label>
+                <input type="text" placeholder="First Name" id="fname" onblur="fnameValid()">
+                <span class="prompts" id="fnamePrompt"></span>
+            </div>
+            <div class="lname">
+                <label for="last name">Last Name: </label>
+                <input type="text" placeholder="Last Name" id="lname" onblur="lnameValid()">
+                <span class="prompts" id="lnamePrompt"></span>
+
+            </div>
+            <div class="email">
+                <label for="email">Email: </label>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="age">
+                <label for="age">Age: </label>
+                <input type="text" placeholder="Age" id="age" onblur="ageValid()">
+                <span class="prompts" id="agePrompt"></span>
+
+            </div>
+            <div class="role">
+                <label for="role">What do you do? </label>
+                <select name="" id="select-role">
+                    <option value="" hidden selected disabled>Select</option>
+                    <option value="">Student</option>
+                    <option value="">Employee</option>
+                    <option value="">Employer</option>
+                </select>
+            </div>
+            <div class="recommend">
+                <label for="role">Would you recommend our
+                    website to a friend? </label>
+                <div class="radio-org">
+                    <div class="radio-org-sub"> <input type="radio" name="opinion" >Definitely</div>
+                    <div class="radio-org-sub"><input type="radio" name="opinion">Maybe</div>
+                    <div class="radio-org-sub"><input type="radio" name="opinion">Not sure</div>
+                </div>
+            </div>
+            <div class="improve">
+                <label for="improve">Give your feedback to us: </label>
+                <img src="https://www.haufe.de/image/feedback-448674-2.jpg?trafo=21x10&width=300&digest=YsHCoaIWWeJj_YqcVRn2bWxWobDez0uxwtKlgXPC5ck%3D" id="feedback" alt="">
+                <textarea name="" id="textarea" cols="39" rows="10"></textarea>
+            </div>
+            <hr class="separateLine">
+            <button type="button" class="btn" onclick="btn()">SUBMIT FORM</button>
+
+        </form>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>
